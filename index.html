@@ -802,4 +802,13 @@ if(dw.length)["proc","procv","procp","wo","wc","moa","inv"].forEach(k=>{if(out[k
 const nd=rs.filter(r=>!String(r.d||"").trim());if(nd.length)["proc","procv","procp"].forEach(k=>{if(out[k])out[k]=bn("⚠ DDO code missing for "+nd.length+" unit(s): "+nd.slice(0,8).map(r=>E(r.s)).join(", ")+(nd.length>8?" …":"")+". Type the code in the Details tab under “Units without DDO code”.","#c0392b")+out[k]})}
 KEYS.forEach(k=>{$("t_"+k).innerHTML=out[k]||""})}
 embLoad();gsInit();ld();msel();sh("ins");
-</script></body></html>
+</script><script>
+(function(){var T0=document.title;
+function nm(){try{var r=RS(),l="";var t=(typeof TB!="undefined"?TB:[]).find(function(x){return x[0]==cur});
+if(typeof isG=="function"&&isG(cur)){l=GR[+cur[1]];if(GP.d&&GP.d!="all"&&!Array.isArray(GP.d)){var d=DOCL.find(function(x){return x[0]==GP.d});if(d)l=d[1]+" - "+l}}else if(t)l=t[1];
+var s=r.length==1?r[0].s+(r[0].u?" - "+String(r[0].u).slice(-4):""):$("mn").value+" Mandal";
+return (s+(l?" - "+l:"")).replace(/[\\\/:*?"<>|]+/g," ").replace(/\s+/g," ").trim()}catch(e){return T0}}
+window.addEventListener("beforeprint",function(){T0=document.title;document.title=nm()});
+window.addEventListener("afterprint",function(){document.title=T0})})();
+</script>
+</body></html>
